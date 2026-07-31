@@ -47,7 +47,8 @@ function BotanicalPlate() {
           <circle cx="256" cy="121" r="48" />
           {Array.from({ length: 18 }).map((_, index) => {
             const angle = (index / 18) * Math.PI * 2;
-            return <path key={index} d={`M256 121 C ${256 + Math.cos(angle - 0.18) * 32} ${121 + Math.sin(angle - 0.18) * 32}, ${256 + Math.cos(angle) * 69} ${121 + Math.sin(angle) * 69}, ${256 + Math.cos(angle + 0.18) * 37} ${121 + Math.sin(angle + 0.18) * 37}`} />;
+            const fixed = (value: number) => value.toFixed(3);
+            return <path key={index} d={`M256 121 C ${fixed(256 + Math.cos(angle - 0.18) * 32)} ${fixed(121 + Math.sin(angle - 0.18) * 32)}, ${fixed(256 + Math.cos(angle) * 69)} ${fixed(121 + Math.sin(angle) * 69)}, ${fixed(256 + Math.cos(angle + 0.18) * 37)} ${fixed(121 + Math.sin(angle + 0.18) * 37)}`} />;
           })}
         </g>
       </svg>
