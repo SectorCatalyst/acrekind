@@ -1,0 +1,6 @@
+import { Leaf } from "lucide-react";
+import Link from "next/link";
+
+export default function TermsPage() {
+  return <main className="legal-page"><article><Link className="wordmark" href="/"><Leaf size={17} />ACREKIND</Link><p className="eyebrow">Terms &amp; limitations · Effective 31 July 2026</p><h1>Use this as a field note, not a field authority.</h1><p>Acrekind is an educational planning aid. Its suggestions are general and may not account for local bylaws, invasive-species rules, nursery provenance, microclimates, soil chemistry, mature spread, toxicity or site-specific ecological conditions.</p><h2>Your responsibility</h2><p>Confirm every plant with a reputable local nursery or qualified professional before purchase or installation. Never collect plants from the wild without lawful permission. Keep potentially toxic plants away from children and animals.</p><h2>No warranty</h2><p>The tool and its output are provided as-is without a guarantee of availability, completeness or fitness for a particular site. You remain responsible for planting decisions and outcomes.</p><h2>Contact</h2><p>Questions can be sent to <a href="mailto:hello@acrekind.com">hello@acrekind.com</a>.</p></article></main>;
+}

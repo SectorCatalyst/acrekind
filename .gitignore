@@ -12,6 +12,9 @@
 
 # testing
 /coverage
+/test-results/
+/playwright-report/
+.scaffold-favicon.ico
 
 # next.js
 /.next/
